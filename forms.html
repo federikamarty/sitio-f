@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Minimalistc</title>
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">M</a>
+            <a href="./historia.html">Historia</a>
+            <a href="./artistas.html">Artistas Emergentes</a>
+            <a href="./forms.html">Forms</a>
+            <a href="./noticias.html">Noticias</a>
+            <a href="./museos.html">Museos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </header>
+
+
+
+        <h3>Contactanos...</h3>
+        
+        <div class="container">
+          <form action="./gracias.html">
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tu nombre.." required>
+        
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Tu apellido.."required>
+        
+            <label for="country">País</label>
+            <select id="country" name="country"required>
+              <option value="australia">Chile</option>
+              <option value="canada">Argentina</option>
+              <option value="usa">Uruguay</option>
+            </select>
+        
+            <label for="subject">Comentarios y sujerencias</label>
+            <textarea id="subject" name="subject" placeholder="Agrega tu comentario..." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+
+
+    <footer>
+        <div class="contenedorFooter">
+          <a href="https://instagram.com/agustin_racauchi?igshid=NTc4MTIwNjQ2YQ==" target="_blank"> <img src="./img/LogoIG.png" alt=""></a>
+          <div>
+            <p>info@minimalistc.com.ar</p> 
+          </div>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
